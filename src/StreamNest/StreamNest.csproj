@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net10.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <NoWarn>$(NoWarn);1591;1574;0419</NoWarn>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>StreamNest</PackageId>
+    <Title>StreamNest</Title>
+    <Version>1.0.0</Version>
+    <Authors>Esmail</Authors>
+    <Description>A high-performance, zero-dependency asynchronous stream collection for .NET supporting multiple concurrent and hierarchically nested contributors (producers).</Description>
+    <PackageTags>async;streams;async-enumerable;channels;nested;concurrency;producer-consumer;streamnest</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <!-- Required only for older .NET Standard runtimes -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="10.0.12" />
+    <PackageReference Include="System.Threading.Channels" Version="10.0.12" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+    <PackageReference Include="System.Threading.Channels" Version="10.0.12" />
+  </ItemGroup>
+
+</Project>
