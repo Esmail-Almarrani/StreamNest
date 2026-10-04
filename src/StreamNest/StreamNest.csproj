@@ -15,6 +15,9 @@
     <PackageTags>async;streams;async-enumerable;channels;nested;concurrency;producer-consumer;streamnest</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/Esmail-Almarrani/StreamNest</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Esmail-Almarrani/StreamNest</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
@@ -33,4 +36,3 @@
   </ItemGroup>
 
 </Project>
-
