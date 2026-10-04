@@ -10,7 +10,7 @@
     <PackageId>StreamNest</PackageId>
     <Title>StreamNest</Title>
     <Version>1.0.0</Version>
-    <Authors>Esmail</Authors>
+    <Authors>Esmail Almarrani</Authors>
     <Description>A high-performance, zero-dependency asynchronous stream collection for .NET supporting multiple concurrent and hierarchically nested contributors (producers).</Description>
     <PackageTags>async;streams;async-enumerable;channels;nested;concurrency;producer-consumer;streamnest</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -33,3 +33,4 @@
   </ItemGroup>
 
 </Project>
+
